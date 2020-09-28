@@ -1,0 +1,104 @@
+.sk a {
+    position: absolute;
+    left: 187px;
+    top: 39px;
+    border-left: 1px solid #b1191a;
+    padding: 3px 15px;
+}
+.sk_list {
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    line-height: 47px;
+   padding: 0 28px;
+}
+.sk_items {
+    float: left;
+}
+.sk_items ul li {
+    float: left;
+}
+.sk_items ul li:last-child a::after {
+    content: "\e91e";
+    font-family: "icomoon";
+    margin-left: 3px;
+}
+.sk_items ul li a {
+    line-height: 49px;
+   padding: 0 23px;
+}
+
+.container_bd ul li {
+   float: left;
+   width: 290px;
+   height: 460px;
+   margin-right: 13px;
+   border: 1px solid transparent;
+}
+.container_bd ul li:hover {
+    border: 1px solid #e12228;
+}
+.container_bd ul li:nth-child(4n) {
+   margin-right: 0;
+}
+.ctbox_hd {
+    height: 410px;
+    padding-top: 20px;
+}
+.ctbox_hd img {
+    margin-left: 80px;
+}
+.condition {
+    padding-left: 14px;
+}
+.condition p {
+    font-size: 14px;
+    color: #666666;
+    padding: 20px 0 15px;
+}
+.price {
+    font-size: 22px;
+    color: #e60012;
+} 
+.price::after {
+    font-size: 14px;
+    color: #a4a4a4;
+    content: "￥6988";
+    text-decoration: line-through;
+    padding-left: 8px;
+}
+.condition .sale {
+    padding: 8px 0;
+    color: #666666;
+}
+.condition .bar {
+    display: inline-block;
+    width: 132px;
+    height: 12px;
+    border-radius: 6px;
+    border: 1px solid #ed282e;
+}
+.condition .bar::before {
+    display: block;
+    content: "";
+    width: 117px;
+    height: 10px;
+    border-radius: 5px 0 0 5px;
+    background-color: #ed282e;
+}
+.ctbox_bd {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #b1191a;
+  
+}
+

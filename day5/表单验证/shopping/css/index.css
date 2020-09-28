@@ -1,0 +1,174 @@
+.main {
+    margin-top: 10px;
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+}
+.main .focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+.main .newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.news-hd {
+    height: 33px; 
+    line-height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+    color: #333333; 
+}
+.news-hd .more {
+      float: right;
+      font-size: 12px;
+    color: #333333; 
+}
+.more::after {
+    font-family: "icomoon";
+    content: '\e920';
+}
+.news-bd {
+    padding: 5px 0 0 15px;
+}
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+.lifeservice ul {
+    width: 252px;
+}
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    text-align: center;
+    border-right: 1px solid  #e4e4e4;
+    border-bottom:  1px  solid   #e4e4e4;
+}
+.lifeservice ul li i {
+    display: inline-block;
+    margin-top: 13px;
+     width: 25px;
+     height: 28px;
+     background-color: pink;
+     background: url(../images/icons.png) no-repeat -18px -15px;
+}
+.bargain img {
+    margin-top: 5px;
+}
+/* 推荐模块 */
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+.recom_hd {
+    float: left;
+    width: 206px;
+    height: 163px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #5c5251;
+}
+.recom_bd {
+    float: left;
+}
+.recom_bd ul li {
+    position: relative;
+    float: left;
+    width: 248px;
+    height: 163px;
+}
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+.recom_bd ul li:nth-child(-n+3)::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 144px;
+    background-color: #dddddd;
+}
+/* 家用电器 */
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+    padding-bottom: 10px;
+}
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+.tab_list ul li {
+    float: left;
+}
+.tab_list ul li a {
+    padding: 0 15px;
+}
+.tab_list_items {
+    height: 361px;
+}
+.tab_list_items>div {
+    float: left; 
+}
+.col_210 {
+    width: 209px;
+    height: 361px;
+    background-color: #f9f9f9;
+}
+.col_210 ul {
+    padding-left: 12px;
+}
+.col_210 ul li {
+    float: left;
+    width: 88px;
+    height: 33px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 33px;
+    border-bottom: 1px solid #ededed;
+}
+.col_329 {
+    width: 330px;
+    background-color: #aed6d8;
+}
+.col_221{
+    width: 209px;
+}
+.col_219 {
+    width: 209px;
+}
+.bb {
+    /* 一般情况下,如果a包含了有宽度的盒子,需要转换成块级元素 */
+    display: block;
+    border-bottom: 1px solid #ededed;
+}

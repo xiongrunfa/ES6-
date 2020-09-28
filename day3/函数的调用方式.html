@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 六种函数的调用方式
+        // 1.普通函数
+        function fn() {
+            console.log('走上人生巅峰');
+        }
+        // fn()或者 fn.call()
+        // 2.对象里面的方法
+        var o = {
+            sayhi: function () {
+                console.log('走上人生巅峰');
+            }
+        }
+        o.sayhi();
+        // 3.构造函数
+        function Star() { }
+        new Star();
+        // 4.定时器里的函数
+        setInterval(function () { }, 1000)  // 每隔1s自动调用函数
+        // 5.绑定事件的函数
+        btn.onclick = function () { }  // 点击按钮调用函数
+            // 6.立即执行函数
+            (function () { })()   // 自动调用
+    </script>
+</body>
+
+</html>

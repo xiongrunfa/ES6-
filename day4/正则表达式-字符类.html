@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var rg=/abc/;  只要包含abc就可以
+        // 字符类：[] 表示有一系列字符可供选择， 只要匹配其中一个就可以了
+        var rg = /[abc]/;  // 只要包含有a 或则包含有b 或者包含有c 都返回true
+        console.log(rg.test('andy'));
+        console.log(rg.test('baby'));
+        console.log(rg.test('color'));
+        console.log(rg.test('red'));
+        console.log('----------------------');
+        var reg = /^[abc]$/;  // 三选一 只有是a 或者b 或者是c 这三个字母才返回 true
+        console.log(reg.test('aa'));
+        console.log(reg.test('a'));
+        console.log(reg.test('b'));
+        console.log(reg.test('c'));
+        console.log(reg.test('abc'));
+        console.log('-----------------');
+        var reg1 = /^[a-z]$/  // 26个英文字母中任何一个字母 都返回true
+        // 字符组合
+        var reg2 = /^[a-zA-Z0-9_-]$/; // 26个英文字母(大写和小写都可以)中任何一个字母 和 _ 和 - 都返回true
+        console.log(reg2.test('a'));
+        console.log(reg2.test('B'));
+        console.log(reg2.test('8'));
+        console.log(reg2.test('-'));
+        console.log(reg2.test('_'));
+        console.log(reg2.test('!'));
+        console.log('--------------------');
+        // 如果中括号里面有^ 表示取反的意思 千万别和边界符^ 混淆
+        var reg3 = /^[^a-zA-Z0-9_-]$/;
+        console.log(reg3.test('a'));
+        console.log(reg3.test('B'));
+        console.log(reg3.test('8'));
+        console.log(reg3.test('-'));
+        console.log(reg3.test('_'));
+        console.log(reg3.test('!'));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    height: 84px;
+    border-bottom: 2px solid #b1191a;
+}
+.logo {
+    padding-top: 16px;
+}
+.registerarea {
+    height: 522px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+.registerarea h3 {
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #333333;
+    font-weight: normal;
+    background-color: #ececec;
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px;
+}
+.login {
+    float: right;
+    font-size: 14px;
+}
+.login a {
+    color: #c81623;
+}
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+.reg_form ul li {
+    margin-bottom: 15px;
+}
+.reg_form ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+.reg_form ul li input {
+    width: 240px;
+    height: 35px;
+    border: 1px solid #ccc;
+}
+.error {
+    font-size: 12px;
+    color: #df3033;
+}
+.error_icon {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url(../images/error.png) no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.success_icon {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url(../images/success.png) no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.success {
+    font-size: 12px;
+    color: green;
+}
+.agreen {
+    margin: 20px 0 30px 88px;
+    
+}
+.agreen p {
+    display: inline;
+    padding: 0 12px;
+}
+.agreen span {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    vertical-align: middle;
+}
+.agreen a {
+    color: #1ba1e6;
+}
+.over {
+    width: 200px;
+    height: 35px;
+    margin-left: 100px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #c81623;
+}
+.mod_copyright {
+    text-align: center;
+}
+.mod_copyright .links {
+        padding: 20px 0 15px 0;
+}
+.mod_copyright .links a {
+    padding: 0 10px;
+}
+.safe {
+    font-size: 12px;
+    color: #b2b2b2;
+    padding-left: 178px;
+    margin-top: -10px;
+}
+.safe em {
+    padding: 0 11px;
+    color: white;
+}
+.ruo {
+    background-color: #de1111;
+}
+.zhong {
+    background-color: #40b83f;
+}
+.qiang {
+    background-color: #f79100;
+}

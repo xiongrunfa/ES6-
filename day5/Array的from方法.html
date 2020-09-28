@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var aryLike = {
+            '0': 1,
+            '1': 2,
+            '2': 3,
+            'length': 3
+        }
+        // var ary = Array.from(aryLike);
+        var ary = Array.from(aryLike, item => item * 2);
+        console.log(ary);
+
+    </script>
+</body>
+
+</html>

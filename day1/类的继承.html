@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* class Father {
+            constructor() {
+
+            }
+            money() {
+                console.log('一个亿');
+            }
+        }
+        class Son extends Father {
+
+        }
+        var son = new Son();
+        son.money(); */
+        class Father {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+            }
+            sum() {
+                console.log(this.x + this.y);
+            }
+        }
+        class Son extends Father {
+            constructor(x, y) {
+                super(x, y)  // 调用父类里面的构造函数
+            }
+        }
+        var son = new Son(10, 12);
+        son.sum();
+    </script>
+</body>
+
+</html>

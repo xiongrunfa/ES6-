@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 800px;
+            height: 500px;
+            margin: 100px auto;
+        }
+
+        .box h4 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .tabsbox {
+            width: 800px;
+            height: 400px;
+            border: 1px solid orangered;
+        }
+
+        .firstnav {
+            position: relative;
+            height: 50px;
+            border-bottom: 1px solid gray;
+        }
+
+        .firstnav li {
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 100%;
+            text-align: center;
+            line-height: 50px;
+            border-right: 1px solid gray;
+            list-style: none;
+        }
+
+        .firstnav li span:first-child input {
+            width: 80px;
+            height: 40px;
+        }
+
+        .liactive {
+            height: 50px !important;
+            border-bottom: 1px solid white;
+        }
+
+        .iconfont {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            font-size: 4px;
+            line-height: 10px;
+            color: white;
+            background-color: black;
+            border-radius: 0 0 0 10px;
+        }
+
+        .tabadd span {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            top: 10px;
+            right: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .tabscon section {
+            display: none;
+        }
+
+        .conactive {
+            font-size: 30px;
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h4>
+            Js 面向对象 动态添加标签页
+        </h4>
+        <div class="tabsbox" id="tab">
+            <!-- tab 标签 -->
+            <nav class="firstnav">
+                <ul>
+                    <li class="liactive"><span>测试1</span><span class="iconfont icon-guanbi">×</span></li>
+                    <li><span>测试2</span><span class="iconfont  icon-guanbi">×</span></li>
+                    <li><span>测试3</span><span class="iconfont  icon-guanbi">×</span></li>
+                </ul>
+                <div class="tabadd">
+                    <span>+</span>
+                </div>
+            </nav>
+
+            <!-- tab 内容 -->
+            <div class="tabscon">
+                <section class="conactive">测试1</section>
+                <section>测试2</section>
+                <section>测试3</section>
+            </div>
+        </div>
+    </div>
+    <script src="Tab.js"></script>
+</body>
+
+</html>

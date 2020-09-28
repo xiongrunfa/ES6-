@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.构造函数的问题
+        function Star(uname, age) {
+            this.uname = uname;
+            this.age = age;
+            /*  this.sing=function() {
+                 console.log('我会唱歌');
+             } */
+            // 公共的方法如果放在构造函数里面，每次实例化都会给方法单独开辟一个内存空间 这样会浪费内存
+        }
+        // 原型对象
+        /* Star.prototype.sing = function () {
+            console.log('我会唱歌');
+        } */
+        // 很多情况下， 我们需要手动的利用constructor 这个属性指回原来的构造函数
+        Star.prototype = {
+            constructor: Star,
+            sing: function () {
+                console.log('我会唱歌');
+            },
+            movie: function () {
+                console.log('我会演电影');
+            }
+        }
+        var ldh = new Star('刘德华', 18);
+        var zxy = new Star('张学友', 19);
+        /* console.log(ldh.sing === zxy.sing);
+        ldh.sing();
+        zxy.sing(); */
+        console.log(Star.prototype);
+        console.log(ldh.__proto__);
+        console.log(Star.prototype.constructor);
+        console.log((ldh.__proto__.constructor));
+    </script>
+</body>
+
+</html>

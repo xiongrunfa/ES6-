@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 模板字符串中可以解析变量
+        let name = `刘德华`;
+        let sayhi = `我的名字是${name}`;
+        console.log(sayhi);
+        // 模板字符串中可以变行
+        let obj = {
+            name: '张学友',
+            age: 50,
+            sex: '男'
+        }
+        let result = `
+        <div>
+            <span>${obj.name}</span>   
+            <span>${obj.age}</span>         
+            <span>${obj.sex}</span>         
+        </div>
+        `;
+        console.log(result);
+        // 模板字符串中可以调用函数
+        const fn = () => {
+            return `刘德华`
+        };
+        let say = `我的名字是${fn()}`;
+        console.log(say);
+    </script>
+</body>
+
+</html>

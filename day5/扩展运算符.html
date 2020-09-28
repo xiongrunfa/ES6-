@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="">1</div>
+    <div class="">2</div>
+    <div class="">3</div>
+    <div class="">4</div>
+    <div class="">5</div>
+    <div class="">6</div>
+    <script>
+        //  扩展运算符应用于数组合并
+        /*  let ary1 = [1, 2, 3];
+         let ary2 = [4, 5, 6];
+         let ary3 = [...ary1, ...ary2];
+         console.log(ary3); */
+        let ary1 = [1, 2, 3];
+        let ary2 = [4, 5, 6];
+        ary1.push(...ary2);
+        console.log(ary1);
+        // 利用扩展运算符把伪数组转换为真正的数组
+        var Divs = document.getElementsByTagName('div');
+        console.log(Divs);
+        var ary = [...Divs];
+        ary.push('a');
+        console.log(ary);
+    </script>
+</body>
+
+</html>

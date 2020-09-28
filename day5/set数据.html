@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // set做数组去重
+        const s = new Set([1, 1, 2, 3, 3, 4, 5, 5]);
+        var ary = [...s];
+        console.log(ary);
+        // set的 add方法
+        const s1 = new Set();
+        s1.add('a').add('b').add('c');
+        console.log(s1.size);
+        // set的 delete方法
+        var flag1 = s1.delete('c');
+        console.log(flag1);
+        console.log(s1);
+        // set的 has方法
+        var flag2 = s1.has('c');
+        console.log(flag2);
+        // set的 clear方法
+        s1.clear();
+        console.log(s1);
+        // set数据的遍历
+        s.forEach((value) => {
+            console.log(value);
+        })
+    </script>
+</body>
+
+</html>

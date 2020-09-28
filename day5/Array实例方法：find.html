@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ary = [{
+            id: 1,
+            name: '刘德华'
+        }, {
+            id: 2,
+            name: '张学友'
+        }]
+        var target = ary.find(item => item.id == 2);
+        console.log(target);
+
+        var arr = [10, 12, 34, 1, 23, 5];
+        var index = arr.findIndex(item => item > 12);
+        console.log(index);
+        console.log(arr.includes(10));
+        console.log(arr.includes(11));
+
+    </script>
+</body>
+
+</html>
